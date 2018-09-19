@@ -100,7 +100,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "OpenSSLLib/include/*.h", "OpenSSLLib/include/**/*.{h,m}"
   s.vendored_libraries = "OpenSSLLib/lib/libssl.a","OpenSSLLib/lib/libcrypto.a"
   # s.public_header_files = "Classes/**/*.h"
 
