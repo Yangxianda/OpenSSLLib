@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage      = "http://github.com/Yangxianda/OpenSSLLib"
-  s.license       = { :type => "MIT", :file => "FILE_LICENSE" }x
+  s.license       = { :type => "MIT" }
   s.author        = { "Pamsun" => "931161435@qq.com" }
   s.platform      = :ios, "8.0"
   s.source        = { :git => "http://EXAMPLE/OpenSSLLib.git", :tag => "#{s.version}" }
