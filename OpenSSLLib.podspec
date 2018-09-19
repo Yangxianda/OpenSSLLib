@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "OpenSSLLib"
   s.version      = "0.0.1"
-  s.summary      = "A short description of OpenSSLLib."
+  s.summary      = "A set of in-app debugging and exploration tools for iOS."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,20 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   DESC
+                - Inspect and modify views in the hierarchy.
+                - View Detailed network request history.
+                - See the properties and ivars on any object.
+                - Dynamically modify many properties and ivars.
+                - Dynamically call instance and class methods.
+                - Access any live object via a scan of the heap.
+                - See system log messages (i.e. from `NSLog()`).
+                - View the file system within your app's sandbox.
+                - Explore all classes in your app and linked systems frameworks (public and private).
+                - Quickly access useful objects such as `[UIApplication sharedApplication]`, the app delegate, the root view controller on the key window, and more.
+                - Dynamically view and modify `NSUserDefaults` values.
+                DESC
 
-  s.homepage     = "http://EXAMPLE/OpenSSLLib"
+  s.homepage     = "http://github.com/Yangxianda/OpenSSLLib"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +49,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT (example)"
+  s.license        = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,8 +74,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -91,8 +101,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
-
+  s.vendored_libraries = "OpenSSLLib/lib/libssl.a","OpenSSLLib/lib/libcrypto.a"
   # s.public_header_files = "Classes/**/*.h"
 
 
