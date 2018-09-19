@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
   s.author        = { "Pamsun" => "931161435@qq.com" }
   s.platform      = :ios, "8.0"
   s.source        = { :git => "https://github.com/Yangxianda/OpenSSLLib.git", :tag => "#{s.version}" }
-  s.source_files  = "include/openssl/*.h","include/*.h"
   s.vendored_libraries = "lib/*.a"
 end
