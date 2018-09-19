@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license       = { :type => "MIT" }
   s.author        = { "Pamsun" => "931161435@qq.com" }
   s.platform      = :ios, "8.0"
-  s.source        = { :git => "http://EXAMPLE/OpenSSLLib.git", :tag => "#{s.version}" }
+  s.source        = { :git => "http://github.com/Yangxianda/OpenSSLLib.git", :tag => "#{s.version}" }
   s.source_files  = "OpenSSLLib/include/*.h", "OpenSSLLib/include/**/*.{h,m}"
   s.vendored_libraries = "OpenSSLLib/lib/libssl.a","OpenSSLLib/lib/libcrypto.a"
 end
